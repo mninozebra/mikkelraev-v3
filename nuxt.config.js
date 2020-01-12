@@ -13,25 +13,27 @@ export default {
     ],
 
     script: [
-      { src: 'https://code.jquery.com/jquery-3.4.1.min.js', defer: true, body: false },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', defer: true, body: false },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js', defer: true, body: false },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js', defer: true, body: false },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js', defer: true, body: false },
-      { src: 'https://cdn.jsdelivr.net/npm/jquery.stellar@0.6.2/jquery.stellar.min.js', defer: true, body: false },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js', defer: true, body: false },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', defer: true, body: false },
-      { src: 'https://cdn.jsdelivr.net/combine/npm/jquery.stellar@0.6.2/jquery.stellar.min.js,npm/scrollax@1.0.0', defer: true, body: false }
+      { src: 'https://code.jquery.com/jquery-3.4.1.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', defer: true, async: true, body: true },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdn.jsdelivr.net/npm/jquery.stellar@0.6.2/jquery.stellar.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', defer: true, async: true, body: true },
+      { src: 'https://cdn.jsdelivr.net/combine/npm/jquery.stellar@0.6.2/jquery.stellar.min.js,npm/scrollax@1.0.0', defer: true, async: true, body: true },
+      { src: 'main.js', defer: true, async: true, body: true }
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css', async: true, body: true },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css', async: true, body: true },
-      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css', async: true, body: true },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css', async: true, body: true },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', async: true, body: true },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', async: true, body: true },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', async: true, body: true }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css', async: true, body: false },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css', async: true, body: false },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.min.css', async: true, body: false },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css', async: true, body: false },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', async: true, body: false },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', async: true, body: false },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', async: true, body: false }
 
 
     ]
@@ -57,7 +59,7 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    // '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
@@ -74,6 +76,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+
     extend (config, ctx) {
     }
   }
